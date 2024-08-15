@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+}
+
+.app-main {
+  display: flex;
+  height: calc(95vh - 60px);
+}
+
+
+.sidebar {
+  width: 25%;
+  padding: 5px;
+  border-right: 2px solid #000000;
+  overflow-y: scroll;
+}
+
+.customer-card {
+  padding: 10px;
+  border: 1px solid #6d6868;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.customer-card.selected {
+  background-color: #a7a3a3;
+}
+
+.customer-details {
+  width: 75%;
+  padding: 10px;
+}
+
+.photo-grid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;  
+  justify-items: center;
+}
+
+.photo-grid img {
+  width: 70%;
+  height: 130px;
+  border-radius: 25px;
+}
+
+.noSelection{
+  width: 75%;
+  text-align: center;
+}
+
+.alignCenter{  
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  top: 30%;
+}
